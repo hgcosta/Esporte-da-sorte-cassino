@@ -1,0 +1,70 @@
+@mixin flex-extremos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@mixin flex-extremos-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin flex-center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+@mixin wrap {
+  flex-wrap: wrap;
+}
+@mixin d-none {
+  display: none;
+}
+@mixin margin-zero {
+  margin: 0;
+}
+@mixin transition {
+  transition: all 0.2s ease-out;
+}
+@mixin transform {
+  transform: scale(1.1);
+}
+
+@mixin cor-placeholder {
+  ::-webkit-input-placeholder {
+  }
+
+  :-moz-placeholder {
+  }
+
+  ::-moz-placeholder {
+  }
+
+  :-ms-input-placeholder {
+  }
+}

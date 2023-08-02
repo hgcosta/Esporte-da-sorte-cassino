@@ -1,0 +1,6 @@
+@import "responsivo";
+@import "mixins";
+@import "home";
+html {
+  scroll-behavior: smooth;
+}
