@@ -1,0 +1,136 @@
+.hero {
+  background-color: #192698;
+  background-image: url("../img/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .content-hero {
+    display: flex;
+    padding: 0 15px 0 15px;
+    .col-info {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3.5rem 0 1rem 0;
+      h1 {
+        font-size: 2.85rem;
+        color: #fff;
+        font-family: titulos;
+        text-transform: uppercase;
+      }
+      p {
+        font-family: textos-regular;
+        color: #fff;
+        font-size: 1.4rem;
+        max-width: 380px;
+      }
+      .btns-hero {
+        max-width: 350px;
+        display: flex;
+        margin: 1.3rem 0;
+        a {
+          padding: 0.2rem 1.1rem;
+          border-radius: 8px;
+          text-decoration: none;
+          font-family: textos-bold;
+          border: solid 2px #3be783;
+          width: 150px;
+          display: block;
+          text-align: center;
+        }
+        a:nth-child(1) {
+          background: #3be783;
+          color: #00116c;
+          margin-right: 1rem;
+        }
+        a:nth-child(2) {
+          background-color: #00116c;
+          color: #fff;
+        }
+      }
+      .info-secundaria {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 380px;
+        margin-top: 2rem;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          background-image: url("../icons/seta-icon.png");
+          width: 34px;
+          height: 56px;
+          position: absolute;
+          top: -40px;
+          right: 5px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        p {
+          text-align: center;
+          max-width: 270px;
+        }
+      }
+    }
+    .col-img {
+      width: 60%;
+      position: relative;
+      img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.jogos {
+  padding: 2rem 0 2rem 0;
+  background-color: #001156;
+  position: relative;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 620px;
+    margin: 0 auto;
+    li {
+      margin: 1rem;
+      width: 170px;
+      a {
+        width: 100%;
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  h2 {
+    color: #fff;
+    font-family: titulos;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .vertodos {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 620px;
+    margin: 0 auto;
+    a {
+      color: #fff;
+      border-radius: 25px;
+      padding: 0.3rem 0.8rem;
+      border: solid 1px #fff;
+      text-decoration: none;
+      transition: all ease-in-out 0.5s;
+      font-family: textos-regular;
+      font-size: 0.85rem;
+      transition: all ease-in-out 0.5s;
+      &:hover {
+        background: #fff;
+        color: #001156;
+      }
+    }
+  }
+}

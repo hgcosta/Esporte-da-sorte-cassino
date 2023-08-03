@@ -1,6 +1,44 @@
 @import "responsivo";
 @import "mixins";
 @import "home";
+@import "geral";
+@import "header";
+
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: menu;
+  src: url(../css/fonts/MonumentExtended-Regular.ttf);
+}
+
+@font-face {
+  font-family: titulos;
+  src: url(../css/fonts/MonumentExtended-Ultrabold.ttf);
+}
+
+@font-face {
+  font-family: textos-medium;
+  src: url(../css/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: textos-regular;
+  src: url(../css/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: textos-bold;
+  src: url(../css/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: secundaria-medium;
+  src: url(../css/fonts/SharpGrotesk-Medium15.otf);
+}
+
+@font-face {
+  font-family: segundaria-bold;
+  src: url(../css/fonts/SharpGrotesk-SemiBold15.otf);
 }

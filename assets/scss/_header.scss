@@ -1,0 +1,39 @@
+header {
+  font-family: menu;
+  .content-header {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding: 1rem 15px;
+    .logo {
+      margin-right: 1.5rem;
+      img {
+        width: 130px;
+      }
+    }
+    ul {
+      display: flex;
+      width: 100%;
+      margin-bottom: 0;
+      li {
+        margin: 0 1rem;
+        a {
+          color: #fff;
+          font-size: 0.85rem;
+          text-align: center;
+          text-decoration: none;
+          transition: all ease-in-out 0.5s;
+          &:hover {
+            color: #3be783;
+          }
+        }
+      }
+      li:nth-child(1) {
+        a {
+          display: block;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+}
