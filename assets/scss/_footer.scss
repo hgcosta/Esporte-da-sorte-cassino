@@ -1,0 +1,17 @@
+footer {
+  background-color: #001a4f;
+  .content-footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    @include tablet {
+      padding: 1.5rem 0;
+    }
+    img {
+      width: 210px;
+      @include tablet {
+        width: 180px;
+      }
+    }
+  }
+}

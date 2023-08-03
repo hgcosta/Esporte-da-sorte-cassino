@@ -18,6 +18,7 @@
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap.bundle.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
+        <script src="https://kit.fontawesome.com/77a3f4ee25.js" crossorigin="anonymous"></script>
         <title><?php bloginfo('name')?> | <?php the_title()?></title>
         <?php wp_head();?>
     </head>
