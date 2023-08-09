@@ -238,6 +238,32 @@
           padding: 0 0.5rem;
         }
       }
+      .lista-numerica {
+        font-family: textos-medium;
+        color: #2f2f2f;
+        list-style-type: decimal;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        @include tablet {
+          font-size: 1rem;
+          max-width: inherit;
+        }
+        li {
+          margin-bottom: 1rem;
+          max-width: 830px;
+        }
+      }
+      .banners-anuncios {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 670px;
+          margin-bottom: 2.5rem;
+          @include tablet {
+            max-width: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -245,7 +271,35 @@
 .section-texto-secundario {
   padding: 2.5rem 0 2.5rem 0;
   background-color: #1a2799;
+  .no-margem {
+    margin: 0 auto !important;
+  }
+  .content-double-col {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    .col-info {
+      width: 50%;
+      @include tablet {
+        width: 100%;
+      }
+    }
+    .col-img-secondary {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      @include tablet {
+        width: 100%;
+        justify-content: center;
+      }
 
+      img {
+        height: 570px;
+      }
+    }
+  }
   .content-texto-imagem {
     display: flex;
     @include tablet {
@@ -343,11 +397,36 @@
       }
     }
   }
+  .table .thead-dark th {
+    color: #fff;
+    background-color: #09136a !important;
+    border-color: #09136a !important;
+  }
+  .table td,
+  .table th {
+    color: #fff !important;
+  }
 }
 
 .section-texto-terceira {
   padding: 2.5rem 0 1rem 0;
   background-color: #001466;
+  .lista-de-jogos {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+    }
+    ul {
+      font-family: textos-medium;
+      color: #fff;
+      list-style-type: decimal;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
   .content-info {
     article {
       max-width: 980px;

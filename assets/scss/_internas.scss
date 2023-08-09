@@ -35,6 +35,10 @@
       .titulo-ao-vivo {
         font-size: 3rem;
         max-width: 530px;
+        @include tablet {
+          font-size: 2rem;
+          max-width: inherit;
+        }
       }
       p {
         font-family: textos-regular;
